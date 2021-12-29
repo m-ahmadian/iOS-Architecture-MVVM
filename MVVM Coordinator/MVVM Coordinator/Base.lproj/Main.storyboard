@@ -63,9 +63,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6e-Ct-yiv">
-                                <rect key="frame" x="148.5" y="484" width="117" height="31"/>
+                                <rect key="frame" x="151" y="484" width="112" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Back tto Login"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back to Login"/>
                                 <connections>
                                     <action selector="backToLoginTapped:" destination="dt6-Mu-a1T" eventType="touchUpInside" id="fbR-8o-evA"/>
                                 </connections>

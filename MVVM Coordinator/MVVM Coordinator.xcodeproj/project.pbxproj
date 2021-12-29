@@ -64,11 +64,11 @@
 		2B5EA735277BF0E600D64B30 /* MVVM Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				2B72F541277C124100B39A4E /* ViewModels */,
-				2B72F53E277C117800B39A4E /* ViewControllers */,
 				2B5EA736277BF0E600D64B30 /* AppDelegate.swift */,
 				2B5EA74A277BF1AF00D64B30 /* App Coordinator.swift */,
 				2B72F546277C193500B39A4E /* Coordinator.swift */,
+				2B72F541277C124100B39A4E /* Login */,
+				2B72F53E277C117800B39A4E /* Register */,
 				2B5EA73C277BF0E600D64B30 /* Main.storyboard */,
 				2B5EA73F277BF0E700D64B30 /* Assets.xcassets */,
 				2B5EA741277BF0E700D64B30 /* LaunchScreen.storyboard */,
@@ -77,22 +77,22 @@
 			path = "MVVM Coordinator";
 			sourceTree = "<group>";
 		};
-		2B72F53E277C117800B39A4E /* ViewControllers */ = {
+		2B72F53E277C117800B39A4E /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				2B5EA73A277BF0E600D64B30 /* LoginViewController.swift */,
+				2B72F544277C134E00B39A4E /* RegisterViewModel.swift */,
 				2B72F53F277C11CF00B39A4E /* RegisterViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Register;
 			sourceTree = "<group>";
 		};
-		2B72F541277C124100B39A4E /* ViewModels */ = {
+		2B72F541277C124100B39A4E /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				2B72F542277C125400B39A4E /* LoginViewModel.swift */,
-				2B72F544277C134E00B39A4E /* RegisterViewModel.swift */,
+				2B5EA73A277BF0E600D64B30 /* LoginViewController.swift */,
 			);
-			path = ViewModels;
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

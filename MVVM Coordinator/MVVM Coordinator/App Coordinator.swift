@@ -22,7 +22,7 @@ class AppCoordinator: Coordinator {
         goToLogin()
     }
 
-    let storyboard = UIStoryboard(name: "Main", bundle: .main)
+    let storyboard = UIStoryboard.init(name: "Main", bundle: .main)
 
     func goToLogin() {
         // Instantiate LoginViewController

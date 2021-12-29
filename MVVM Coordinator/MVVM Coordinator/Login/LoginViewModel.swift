@@ -7,8 +7,14 @@
 
 import Foundation
 
+protocol LoginNavigation: AnyObject {
+    func goToRegisterPage()
+    func goToHome()
+}
+
 class LoginViewModel {
     weak var appCoordinator: AppCoordinator!
+    weak var navigation: LoginNavigation!
 
     func goToRegister() {
         appCoordinator.goToRegister()
