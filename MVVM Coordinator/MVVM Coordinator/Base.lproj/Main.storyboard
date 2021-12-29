@@ -15,9 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WI-dN-PUS">
+                                <rect key="frame" x="150" y="483" width="114" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Register Page"/>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMc-ov-v4a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ma-wG-G5n">
+                                <rect key="frame" x="140" y="437" width="134" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8WI-dN-PUS" firstAttribute="top" secondItem="4Ma-wG-G5n" secondAttribute="bottom" constant="14" id="6iZ-oo-dGo"/>
+                            <constraint firstItem="8WI-dN-PUS" firstAttribute="centerX" secondItem="4Ma-wG-G5n" secondAttribute="centerX" id="EFm-Sc-3Vy"/>
+                            <constraint firstItem="4Ma-wG-G5n" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ukv-9w-nnA"/>
+                            <constraint firstItem="4Ma-wG-G5n" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VRb-y9-QPo"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="registerButton" destination="8WI-dN-PUS" id="78H-MS-bwI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,9 +55,34 @@
                     <view key="view" contentMode="scaleToFill" id="Fnt-hM-XBj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcS-KT-AKZ">
+                                <rect key="frame" x="123" y="437" width="168" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6e-Ct-yiv">
+                                <rect key="frame" x="148.5" y="484" width="117" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back tto Login"/>
+                                <connections>
+                                    <action selector="backToLoginTapped:" destination="dt6-Mu-a1T" eventType="touchUpInside" id="fbR-8o-evA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="G3T-DI-nuJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qcS-KT-AKZ" firstAttribute="centerY" secondItem="G3T-DI-nuJ" secondAttribute="centerY" id="2vJ-EE-IhG"/>
+                            <constraint firstItem="O6e-Ct-yiv" firstAttribute="centerX" secondItem="qcS-KT-AKZ" secondAttribute="centerX" id="RIu-NU-8Os"/>
+                            <constraint firstItem="qcS-KT-AKZ" firstAttribute="centerX" secondItem="G3T-DI-nuJ" secondAttribute="centerX" id="eNm-dI-tfy"/>
+                            <constraint firstItem="O6e-Ct-yiv" firstAttribute="top" secondItem="qcS-KT-AKZ" secondAttribute="bottom" constant="15" id="tRS-ay-kzd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backToLoginButton" destination="O6e-Ct-yiv" id="rej-lr-u5t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Hm-Jt-lm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

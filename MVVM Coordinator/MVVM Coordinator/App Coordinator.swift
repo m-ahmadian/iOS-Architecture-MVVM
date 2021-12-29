@@ -8,14 +8,6 @@
 import Foundation
 import UIKit
 
-protocol Coordinator {
-    var parentCoordinator: Coordinator? { get set }
-    var children: [Coordinator] { get set }
-    var navigationController: UINavigationController { get set }
-
-    func start()
-}
-
 class AppCoordinator: Coordinator {
     var parentCoordinator: Coordinator?
     var children: [Coordinator] = []
@@ -27,12 +19,12 @@ class AppCoordinator: Coordinator {
 
     func start() {
         // The first time this coordinator started, is to launch login page
-        goToLoginPage()
+        goToLogin()
     }
 
     let storyboard = UIStoryboard(name: "Main", bundle: .main)
 
-    func goToLoginPage() {
+    func goToLogin() {
         // Instantiate LoginViewController
         let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
@@ -49,7 +41,7 @@ class AppCoordinator: Coordinator {
         navigationController.pushViewController(loginViewController, animated: true)
     }
 
-    func goToRegisterPage() {
+    func goToRegister() {
         let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
         let registerViewModel = RegisterViewModel.init()
         registerViewModel.appCoordinator = self

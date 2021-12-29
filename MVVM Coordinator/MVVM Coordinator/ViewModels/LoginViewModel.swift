@@ -10,7 +10,7 @@ import Foundation
 class LoginViewModel {
     weak var appCoordinator: AppCoordinator!
 
-    func goToLoginPage() {
-        appCoordinator.goToLoginPage()
+    func goToRegister() {
+        appCoordinator.goToRegister()
     }
 }
